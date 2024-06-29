@@ -4,15 +4,15 @@ import { getThemeConfig } from "@sugarat/theme/node";
 // 开启RSS支持（RSS配置）
 import type { Theme } from "@sugarat/theme";
 
-const baseUrl = "https://xiaoda001.github.io";
+const baseUrl = "https://blog.xiaoda001.top";
 const RSS: Theme.RSSOptions = {
-  title: "粥里有勺糖",
+  title: "小达零零壹",
   baseUrl,
-  copyright: "Copyright (c) 2024-present, 粥里有勺糖",
-  description: "你的指尖,拥有改变世界的力量（大前端相关技术分享）",
+  copyright: "Copyright (c) 2024-present, 小达零零壹",
+  description: "编程爱好者/技术爬行者（大前端相关技术分享）",
   language: "zh-cn",
-  image: "https://img.cdn.sugarat.top/mdImg/MTY3NDk5NTE2NzAzMA==674995167030",
-  favicon: "https://sugarat.top/favicon.ico",
+  image: "https://blog.xiaoda001.top/logo.png",
+  favicon: "https://blog.xiaoda001.top/favicon.ico",
 };
 
 // 所有配置项，详见文档: https://theme.sugarat.top/
