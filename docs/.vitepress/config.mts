@@ -18,7 +18,7 @@ export default defineConfig({
   // base,
   lang: "zh-cn",
   title: "小达零零壹",
-  description: "前端",
+  description: "编程爱好者/技术爬行者",
   lastUpdated: true,
   // 详见：https://vitepress.dev/zh/reference/site-config#head
   head: [
