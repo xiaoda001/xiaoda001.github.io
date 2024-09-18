@@ -49,6 +49,8 @@ npm install --save-dev eslint-config-prettier
 
 - eslint 配置文件配置 prettier
 
+```json
 {
-"extends": ["next", "prettier"]
+  "extends": ["next", "prettier"]
 }
+```
