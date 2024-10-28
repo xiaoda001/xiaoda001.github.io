@@ -1,0 +1,330 @@
+<?xml version="1.0" encoding="utf-8"?>
+<rss version="2.0" xmlns:dc="http://purl.org/dc/elements/1.1/" xmlns:content="http://purl.org/rss/1.0/modules/content/">
+    <channel>
+        <title>小达零零壹</title>
+        <link>https://blog.xiaoda001.top</link>
+        <description>编程爱好者/技术爬行者（大前端相关技术分享）</description>
+        <lastBuildDate>Mon, 28 Oct 2024 15:28:14 GMT</lastBuildDate>
+        <docs>https://validator.w3.org/feed/docs/rss2.html</docs>
+        <generator>https://github.com/jpmonette/feed</generator>
+        <language>zh-cn</language>
+        <image>
+            <title>小达零零壹</title>
+            <url>https://blog.xiaoda001.top/logo.png</url>
+            <link>https://blog.xiaoda001.top</link>
+        </image>
+        <copyright>Copyright (c) 2024-present, 小达零零壹</copyright>
+        <item>
+            <title><![CDATA[Nextjs 学习之搭建项目]]></title>
+            <link>https://blog.xiaoda001.top/article/fontend/Nextjs/01_Nextjs学习之搭建项目/</link>
+            <guid>https://blog.xiaoda001.top/article/fontend/Nextjs/01_Nextjs学习之搭建项目/</guid>
+            <pubDate>Wed, 18 Sep 2024 14:19:08 GMT</pubDate>
+            <description><![CDATA[Nextjs 学习之搭建项目
+ 创建项目
+```bash
+npx create-next-app@latest
+```
+根据提示一步一步完成配置
+```bash
+ 项目名称
+What is your ]]></description>
+            <content:encoded><![CDATA[<h1 id="nextjs-学习之搭建项目" tabindex="-1">Nextjs 学习之搭建项目 <a class="header-anchor" href="#nextjs-学习之搭建项目" aria-label="Permalink to &quot;Nextjs 学习之搭建项目&quot;">&ZeroWidthSpace;</a></h1>
+<h2 id="创建项目" tabindex="-1">创建项目 <a class="header-anchor" href="#创建项目" aria-label="Permalink to &quot;创建项目&quot;">&ZeroWidthSpace;</a></h2>
+<div class="language-bash vp-adaptive-theme"><button title="Copy Code" class="copy"></button><span class="lang">bash</span><pre class="shiki shiki-themes github-light github-dark vp-code" tabindex="0" v-pre=""><code><span class="line"><span style="--shiki-light:#6F42C1;--shiki-dark:#B392F0">npx</span><span style="--shiki-light:#032F62;--shiki-dark:#9ECBFF"> create-next-app@latest</span></span></code></pre>
+</div><p>根据提示一步一步完成配置</p>
+<div class="language-bash vp-adaptive-theme"><button title="Copy Code" class="copy"></button><span class="lang">bash</span><pre class="shiki shiki-themes github-light github-dark vp-code" tabindex="0" v-pre=""><code><span class="line"><span style="--shiki-light:#6A737D;--shiki-dark:#6A737D"># 项目名称</span></span>
+<span class="line"><span style="--shiki-light:#6F42C1;--shiki-dark:#B392F0">What</span><span style="--shiki-light:#032F62;--shiki-dark:#9ECBFF"> is</span><span style="--shiki-light:#032F62;--shiki-dark:#9ECBFF"> your</span><span style="--shiki-light:#032F62;--shiki-dark:#9ECBFF"> project</span><span style="--shiki-light:#032F62;--shiki-dark:#9ECBFF"> named?</span><span style="--shiki-light:#032F62;--shiki-dark:#9ECBFF"> my-app</span></span>
+<span class="line"><span style="--shiki-light:#6A737D;--shiki-dark:#6A737D"># 是否使用TypeScript?</span></span>
+<span class="line"><span style="--shiki-light:#6F42C1;--shiki-dark:#B392F0">Would</span><span style="--shiki-light:#032F62;--shiki-dark:#9ECBFF"> you</span><span style="--shiki-light:#032F62;--shiki-dark:#9ECBFF"> like</span><span style="--shiki-light:#032F62;--shiki-dark:#9ECBFF"> to</span><span style="--shiki-light:#032F62;--shiki-dark:#9ECBFF"> use</span><span style="--shiki-light:#032F62;--shiki-dark:#9ECBFF"> TypeScript?</span><span style="--shiki-light:#032F62;--shiki-dark:#9ECBFF"> No</span><span style="--shiki-light:#032F62;--shiki-dark:#9ECBFF"> /</span><span style="--shiki-light:#032F62;--shiki-dark:#9ECBFF"> Yes</span></span>
+<span class="line"><span style="--shiki-light:#6A737D;--shiki-dark:#6A737D"># 是否使用ESLint?</span></span>
+<span class="line"><span style="--shiki-light:#6F42C1;--shiki-dark:#B392F0">Would</span><span style="--shiki-light:#032F62;--shiki-dark:#9ECBFF"> you</span><span style="--shiki-light:#032F62;--shiki-dark:#9ECBFF"> like</span><span style="--shiki-light:#032F62;--shiki-dark:#9ECBFF"> to</span><span style="--shiki-light:#032F62;--shiki-dark:#9ECBFF"> use</span><span style="--shiki-light:#032F62;--shiki-dark:#9ECBFF"> ESLint?</span><span style="--shiki-light:#032F62;--shiki-dark:#9ECBFF"> No</span><span style="--shiki-light:#032F62;--shiki-dark:#9ECBFF"> /</span><span style="--shiki-light:#032F62;--shiki-dark:#9ECBFF"> Yes</span></span>
+<span class="line"><span style="--shiki-light:#6A737D;--shiki-dark:#6A737D"># 是否使用 Tailwind CSS?</span></span>
+<span class="line"><span style="--shiki-light:#6F42C1;--shiki-dark:#B392F0">Would</span><span style="--shiki-light:#032F62;--shiki-dark:#9ECBFF"> you</span><span style="--shiki-light:#032F62;--shiki-dark:#9ECBFF"> like</span><span style="--shiki-light:#032F62;--shiki-dark:#9ECBFF"> to</span><span style="--shiki-light:#032F62;--shiki-dark:#9ECBFF"> use</span><span style="--shiki-light:#032F62;--shiki-dark:#9ECBFF"> Tailwind</span><span style="--shiki-light:#032F62;--shiki-dark:#9ECBFF"> CSS?</span><span style="--shiki-light:#032F62;--shiki-dark:#9ECBFF"> No</span><span style="--shiki-light:#032F62;--shiki-dark:#9ECBFF"> /</span><span style="--shiki-light:#032F62;--shiki-dark:#9ECBFF"> Yes</span></span>
+<span class="line"><span style="--shiki-light:#6A737D;--shiki-dark:#6A737D"># 是否使用 `src/` 为根目录</span></span>
+<span class="line"><span style="--shiki-light:#6F42C1;--shiki-dark:#B392F0">Would</span><span style="--shiki-light:#032F62;--shiki-dark:#9ECBFF"> you</span><span style="--shiki-light:#032F62;--shiki-dark:#9ECBFF"> like</span><span style="--shiki-light:#032F62;--shiki-dark:#9ECBFF"> to</span><span style="--shiki-light:#032F62;--shiki-dark:#9ECBFF"> use</span><span style="--shiki-light:#032F62;--shiki-dark:#9ECBFF"> `</span><span style="--shiki-light:#6F42C1;--shiki-dark:#B392F0">src/</span><span style="--shiki-light:#032F62;--shiki-dark:#9ECBFF">`</span><span style="--shiki-light:#6F42C1;--shiki-dark:#B392F0"> directory?</span><span style="--shiki-light:#032F62;--shiki-dark:#9ECBFF"> No</span><span style="--shiki-light:#032F62;--shiki-dark:#9ECBFF"> /</span><span style="--shiki-light:#032F62;--shiki-dark:#9ECBFF"> Yes</span></span>
+<span class="line"><span style="--shiki-light:#6A737D;--shiki-dark:#6A737D"># 是否使用 App Router?</span></span>
+<span class="line"><span style="--shiki-light:#6F42C1;--shiki-dark:#B392F0">Would</span><span style="--shiki-light:#032F62;--shiki-dark:#9ECBFF"> you</span><span style="--shiki-light:#032F62;--shiki-dark:#9ECBFF"> like</span><span style="--shiki-light:#032F62;--shiki-dark:#9ECBFF"> to</span><span style="--shiki-light:#032F62;--shiki-dark:#9ECBFF"> use</span><span style="--shiki-light:#032F62;--shiki-dark:#9ECBFF"> App</span><span style="--shiki-light:#032F62;--shiki-dark:#9ECBFF"> Router?</span><span style="--shiki-light:#24292E;--shiki-dark:#E1E4E8"> (recommended) No / Yes</span></span>
+<span class="line"><span style="--shiki-light:#6A737D;--shiki-dark:#6A737D"># 是否使用路径别名。默认 @/* 指向 src/ 目录。</span></span>
+<span class="line"><span style="--shiki-light:#6F42C1;--shiki-dark:#B392F0">Would</span><span style="--shiki-light:#032F62;--shiki-dark:#9ECBFF"> you</span><span style="--shiki-light:#032F62;--shiki-dark:#9ECBFF"> like</span><span style="--shiki-light:#032F62;--shiki-dark:#9ECBFF"> to</span><span style="--shiki-light:#032F62;--shiki-dark:#9ECBFF"> customize</span><span style="--shiki-light:#032F62;--shiki-dark:#9ECBFF"> the</span><span style="--shiki-light:#032F62;--shiki-dark:#9ECBFF"> default</span><span style="--shiki-light:#032F62;--shiki-dark:#9ECBFF"> import</span><span style="--shiki-light:#032F62;--shiki-dark:#9ECBFF"> alias</span><span style="--shiki-light:#24292E;--shiki-dark:#E1E4E8"> (@/*)</span><span style="--shiki-light:#D73A49;--shiki-dark:#F97583">?</span><span style="--shiki-light:#24292E;--shiki-dark:#E1E4E8"> No / Yes</span></span>
+<span class="line"><span style="--shiki-light:#6A737D;--shiki-dark:#6A737D"># 自定义 import 别名</span></span>
+<span class="line"><span style="--shiki-light:#6F42C1;--shiki-dark:#B392F0">What</span><span style="--shiki-light:#032F62;--shiki-dark:#9ECBFF"> import</span><span style="--shiki-light:#032F62;--shiki-dark:#9ECBFF"> alias</span><span style="--shiki-light:#032F62;--shiki-dark:#9ECBFF"> would</span><span style="--shiki-light:#032F62;--shiki-dark:#9ECBFF"> you</span><span style="--shiki-light:#032F62;--shiki-dark:#9ECBFF"> like</span><span style="--shiki-light:#032F62;--shiki-dark:#9ECBFF"> configured?</span><span style="--shiki-light:#032F62;--shiki-dark:#9ECBFF"> @/</span><span style="--shiki-light:#005CC5;--shiki-dark:#79B8FF">*</span></span></code></pre>
+</div><p>完成配置后，会自动安装项目文件。</p>
+<h2 id="配置-prettier-格式化规范" tabindex="-1">配置 Prettier 格式化规范 <a class="header-anchor" href="#配置-prettier-格式化规范" aria-label="Permalink to &quot;配置 Prettier 格式化规范&quot;">&ZeroWidthSpace;</a></h2>
+<ul>
+<li>
+<p>安装 prettier，参考<a href="./../../Prettier/项目添加Prettier格式化规范/">项目添加 Prettier 格式化规范</a></p>
+</li>
+<li>
+<p>安装 prettier 与 eslint 兼容插件</p>
+</li>
+</ul>
+<div class="language-bash vp-adaptive-theme"><button title="Copy Code" class="copy"></button><span class="lang">bash</span><pre class="shiki shiki-themes github-light github-dark vp-code" tabindex="0" v-pre=""><code><span class="line"><span style="--shiki-light:#6F42C1;--shiki-dark:#B392F0">npm</span><span style="--shiki-light:#032F62;--shiki-dark:#9ECBFF"> install</span><span style="--shiki-light:#005CC5;--shiki-dark:#79B8FF"> --save-dev</span><span style="--shiki-light:#032F62;--shiki-dark:#9ECBFF"> eslint-config-prettier</span></span></code></pre>
+</div><ul>
+<li>eslint 配置文件配置 prettier</li>
+</ul>
+<div class="language-json vp-adaptive-theme"><button title="Copy Code" class="copy"></button><span class="lang">json</span><pre class="shiki shiki-themes github-light github-dark vp-code" tabindex="0" v-pre=""><code><span class="line"><span style="--shiki-light:#24292E;--shiki-dark:#E1E4E8">{</span></span>
+<span class="line"><span style="--shiki-light:#005CC5;--shiki-dark:#79B8FF">  "extends"</span><span style="--shiki-light:#24292E;--shiki-dark:#E1E4E8">: [</span><span style="--shiki-light:#032F62;--shiki-dark:#9ECBFF">"next"</span><span style="--shiki-light:#24292E;--shiki-dark:#E1E4E8">, </span><span style="--shiki-light:#032F62;--shiki-dark:#9ECBFF">"prettier"</span><span style="--shiki-light:#24292E;--shiki-dark:#E1E4E8">]</span></span>
+<span class="line"><span style="--shiki-light:#24292E;--shiki-dark:#E1E4E8">}</span></span></code></pre>
+</div>]]></content:encoded>
+        </item>
+        <item>
+            <title><![CDATA[window11 专业版激活]]></title>
+            <link>https://blog.xiaoda001.top/article/window/03_window11专业版激活/</link>
+            <guid>https://blog.xiaoda001.top/article/window/03_window11专业版激活/</guid>
+            <pubDate>Sat, 10 Aug 2024 14:08:32 GMT</pubDate>
+            <description><![CDATA[window11 专业版激活
+- 打开`powsershell` 管理员模式，依次输入以下命令
+```shell
+slmgr -ipk W269N-WFGWX-YVC9B-4J6C9-T83GX
+sl]]></description>
+            <content:encoded><![CDATA[<h1 id="window11-专业版激活" tabindex="-1">window11 专业版激活 <a class="header-anchor" href="#window11-专业版激活" aria-label="Permalink to &quot;window11 专业版激活&quot;">&ZeroWidthSpace;</a></h1>
+<ul>
+<li>打开<code>powsershell</code> 管理员模式，依次输入以下命令</li>
+</ul>
+<div class="language-shell vp-adaptive-theme"><button title="Copy Code" class="copy"></button><span class="lang">shell</span><pre class="shiki shiki-themes github-light github-dark vp-code" tabindex="0" v-pre=""><code><span class="line"><span style="--shiki-light:#6F42C1;--shiki-dark:#B392F0">slmgr</span><span style="--shiki-light:#005CC5;--shiki-dark:#79B8FF"> -ipk</span><span style="--shiki-light:#032F62;--shiki-dark:#9ECBFF"> W269N-WFGWX-YVC9B-4J6C9-T83GX</span></span>
+<span class="line"></span>
+<span class="line"><span style="--shiki-light:#6F42C1;--shiki-dark:#B392F0">slmgr</span><span style="--shiki-light:#005CC5;--shiki-dark:#79B8FF"> -skms</span><span style="--shiki-light:#032F62;--shiki-dark:#9ECBFF"> kms.0t.net.cn</span></span>
+<span class="line"></span>
+<span class="line"><span style="--shiki-light:#6A737D;--shiki-dark:#6A737D"># 做完这一步会看到激活成功的弹窗</span></span>
+<span class="line"><span style="--shiki-light:#6F42C1;--shiki-dark:#B392F0">slmgr</span><span style="--shiki-light:#005CC5;--shiki-dark:#79B8FF"> -ato</span></span></code></pre>
+</div><blockquote>
+<p>解释：
+Windows11 专业版 KMS 激活密钥：W269N-WFGWX-YVC9B-4J6C9-T83GX
+推荐 KMS 激活服务器:kms.0t.net.cn</p>
+</blockquote>
+<h2 id="文章参考" tabindex="-1">文章参考 <a class="header-anchor" href="#文章参考" aria-label="Permalink to &quot;文章参考&quot;">&ZeroWidthSpace;</a></h2>
+<ul>
+<li><a href="https://www.orcy.net.cn/1802.html" target="_blank" rel="noreferrer">https://www.orcy.net.cn/1802.html</a></li>
+</ul>
+]]></content:encoded>
+        </item>
+        <item>
+            <title><![CDATA[pnpm 搭建项目]]></title>
+            <link>https://blog.xiaoda001.top/article/fontend/pnpm/01_pnpm搭建项目/</link>
+            <guid>https://blog.xiaoda001.top/article/fontend/pnpm/01_pnpm搭建项目/</guid>
+            <pubDate>Sat, 10 Aug 2024 14:08:32 GMT</pubDate>
+            <description><![CDATA[pnpm 搭建项目
+pnpm 是一个包管理器，它可以帮助我们快速搭建项目，并且可以帮助我们管理项目的依赖。
+- 安装 pnpm
+```bash
+npm install -g pnpm
+```
+- 创建]]></description>
+            <content:encoded><![CDATA[<h1 id="pnpm-搭建项目" tabindex="-1">pnpm 搭建项目 <a class="header-anchor" href="#pnpm-搭建项目" aria-label="Permalink to &quot;pnpm 搭建项目&quot;">&ZeroWidthSpace;</a></h1>
+<p>pnpm 是一个包管理器，它可以帮助我们快速搭建项目，并且可以帮助我们管理项目的依赖。</p>
+<ul>
+<li>安装 pnpm</li>
+</ul>
+<div class="language-bash vp-adaptive-theme"><button title="Copy Code" class="copy"></button><span class="lang">bash</span><pre class="shiki shiki-themes github-light github-dark vp-code" tabindex="0" v-pre=""><code><span class="line"><span style="--shiki-light:#6F42C1;--shiki-dark:#B392F0">npm</span><span style="--shiki-light:#032F62;--shiki-dark:#9ECBFF"> install</span><span style="--shiki-light:#005CC5;--shiki-dark:#79B8FF"> -g</span><span style="--shiki-light:#032F62;--shiki-dark:#9ECBFF"> pnpm</span></span></code></pre>
+</div><ul>
+<li>创建目录</li>
+</ul>
+<div class="language-bash vp-adaptive-theme"><button title="Copy Code" class="copy"></button><span class="lang">bash</span><pre class="shiki shiki-themes github-light github-dark vp-code" tabindex="0" v-pre=""><code><span class="line"><span style="--shiki-light:#6F42C1;--shiki-dark:#B392F0">mkdir</span><span style="--shiki-light:#032F62;--shiki-dark:#9ECBFF"> project_demo</span></span></code></pre>
+</div><ul>
+<li>初始化项目</li>
+</ul>
+<div class="language-bash vp-adaptive-theme"><button title="Copy Code" class="copy"></button><span class="lang">bash</span><pre class="shiki shiki-themes github-light github-dark vp-code" tabindex="0" v-pre=""><code><span class="line"><span style="--shiki-light:#6F42C1;--shiki-dark:#B392F0">pnpm</span><span style="--shiki-light:#032F62;--shiki-dark:#9ECBFF"> init</span></span></code></pre>
+</div><ul>
+<li>根目录创建 <code>.npmrc</code> 文件</li>
+</ul>
+<div class="language-bash vp-adaptive-theme"><button title="Copy Code" class="copy"></button><span class="lang">bash</span><pre class="shiki shiki-themes github-light github-dark vp-code" tabindex="0" v-pre=""><code><span class="line"><span style="--shiki-light:#6A737D;--shiki-dark:#6A737D"># 允许将所有依赖项提升到项目的根目录，这样可以减少依赖嵌套的深度，使得依赖管理更加高效。这种做法有时被认为是“不知羞耻”的，因为它可能导致依赖冲突和难以维护的依赖树。</span></span>
+<span class="line"><span style="--shiki-light:#24292E;--shiki-dark:#E1E4E8">shamefully-hoist</span><span style="--shiki-light:#D73A49;--shiki-dark:#F97583">=</span><span style="--shiki-light:#032F62;--shiki-dark:#9ECBFF">true</span></span>
+<span class="line"><span style="--shiki-light:#6A737D;--shiki-dark:#6A737D"># 宽松地处理对等依赖关系。这意味着如果项目依赖于另一个软件包，而该软件包指定了特定版本的对等依赖，使用false设置时，即使项目中不存在这些对等依赖的指定版本，安装过程也不会失败。</span></span>
+<span class="line"><span style="--shiki-light:#24292E;--shiki-dark:#E1E4E8">strict-peer-dependencies</span><span style="--shiki-light:#D73A49;--shiki-dark:#F97583">=</span><span style="--shiki-light:#032F62;--shiki-dark:#9ECBFF">false</span></span>
+<span class="line"><span style="--shiki-light:#6A737D;--shiki-dark:#6A737D"># 忽略工作区根目录检查。通常，包管理器会检查当前目录是否为工作区的根目录，如果不是，它可能会发出警告或采取不同的行为。设置为true可以禁用这种检查，使得依赖安装可以在任何目录进行。</span></span>
+<span class="line"><span style="--shiki-light:#24292E;--shiki-dark:#E1E4E8">ignore-workspace-root-check</span><span style="--shiki-light:#D73A49;--shiki-dark:#F97583">=</span><span style="--shiki-light:#032F62;--shiki-dark:#9ECBFF">true</span></span></code></pre>
+</div><ul>
+<li>根目录创建 <code>pnpm-workspace.yaml</code> 文件</li>
+</ul>
+<div class="language-yaml vp-adaptive-theme"><button title="Copy Code" class="copy"></button><span class="lang">yaml</span><pre class="shiki shiki-themes github-light github-dark vp-code" tabindex="0" v-pre=""><code><span class="line"><span style="--shiki-light:#22863A;--shiki-dark:#85E89D">packages</span><span style="--shiki-light:#24292E;--shiki-dark:#E1E4E8">:</span></span>
+<span class="line"><span style="--shiki-light:#24292E;--shiki-dark:#E1E4E8">  - </span><span style="--shiki-light:#032F62;--shiki-dark:#9ECBFF">"packages/*"</span></span></code></pre>
+</div>]]></content:encoded>
+        </item>
+        <item>
+            <title><![CDATA[项目添加 Prettier 格式化规范]]></title>
+            <link>https://blog.xiaoda001.top/article/fontend/Prettier/项目添加Prettier格式化规范/</link>
+            <guid>https://blog.xiaoda001.top/article/fontend/Prettier/项目添加Prettier格式化规范/</guid>
+            <pubDate>Mon, 05 Aug 2024 00:37:20 GMT</pubDate>
+            <description><![CDATA[项目添加 Prettier 格式化规范
+- vscode 安装 Prettier 插件
+  插件地址： https://marketplace.visualstudio.com/items?itemN]]></description>
+            <content:encoded><![CDATA[<h1 id="项目添加-prettier-格式化规范" tabindex="-1">项目添加 Prettier 格式化规范 <a class="header-anchor" href="#项目添加-prettier-格式化规范" aria-label="Permalink to &quot;项目添加 Prettier 格式化规范&quot;">&ZeroWidthSpace;</a></h1>
+<ul>
+<li>
+<p>vscode 安装 Prettier 插件</p>
+<p>插件地址： <a href="https://marketplace.visualstudio.com/items?itemName=esbenp.prettier-vscode" target="_blank" rel="noreferrer">https://marketplace.visualstudio.com/items?itemName=esbenp.prettier-vscode</a></p>
+</li>
+<li>
+<p>安装 Prettier</p>
+</li>
+</ul>
+<div class="language-bash vp-adaptive-theme"><button title="Copy Code" class="copy"></button><span class="lang">bash</span><pre class="shiki shiki-themes github-light github-dark vp-code" tabindex="0" v-pre=""><code><span class="line"><span style="--shiki-light:#6F42C1;--shiki-dark:#B392F0">npm</span><span style="--shiki-light:#032F62;--shiki-dark:#9ECBFF"> install</span><span style="--shiki-light:#005CC5;--shiki-dark:#79B8FF"> --save-dev</span><span style="--shiki-light:#005CC5;--shiki-dark:#79B8FF"> --save-exact</span><span style="--shiki-light:#032F62;--shiki-dark:#9ECBFF"> prettier</span></span></code></pre>
+</div><ul>
+<li>项目根目录创建配置文件 <code>.prettierrc</code>, 添加配置, <a href="https://prettier.io/docs/en/options" target="_blank" rel="noreferrer">全部配置</a></li>
+</ul>
+<div class="language-json vp-adaptive-theme"><button title="Copy Code" class="copy"></button><span class="lang">json</span><pre class="shiki shiki-themes github-light github-dark vp-code" tabindex="0" v-pre=""><code><span class="line"><span style="--shiki-light:#24292E;--shiki-dark:#E1E4E8">{</span></span>
+<span class="line"><span style="--shiki-light:#005CC5;--shiki-dark:#79B8FF">  "printWidth"</span><span style="--shiki-light:#24292E;--shiki-dark:#E1E4E8">: </span><span style="--shiki-light:#005CC5;--shiki-dark:#79B8FF">140</span><span style="--shiki-light:#24292E;--shiki-dark:#E1E4E8">,</span></span>
+<span class="line"><span style="--shiki-light:#005CC5;--shiki-dark:#79B8FF">  "tabWidth"</span><span style="--shiki-light:#24292E;--shiki-dark:#E1E4E8">: </span><span style="--shiki-light:#005CC5;--shiki-dark:#79B8FF">2</span><span style="--shiki-light:#24292E;--shiki-dark:#E1E4E8">,</span></span>
+<span class="line"><span style="--shiki-light:#005CC5;--shiki-dark:#79B8FF">  "semi"</span><span style="--shiki-light:#24292E;--shiki-dark:#E1E4E8">: </span><span style="--shiki-light:#005CC5;--shiki-dark:#79B8FF">true</span><span style="--shiki-light:#24292E;--shiki-dark:#E1E4E8">,</span></span>
+<span class="line"><span style="--shiki-light:#005CC5;--shiki-dark:#79B8FF">  "singleQuote"</span><span style="--shiki-light:#24292E;--shiki-dark:#E1E4E8">: </span><span style="--shiki-light:#005CC5;--shiki-dark:#79B8FF">true</span><span style="--shiki-light:#24292E;--shiki-dark:#E1E4E8">,</span></span>
+<span class="line"><span style="--shiki-light:#005CC5;--shiki-dark:#79B8FF">  "quoteProps"</span><span style="--shiki-light:#24292E;--shiki-dark:#E1E4E8">: </span><span style="--shiki-light:#032F62;--shiki-dark:#9ECBFF">"as-needed"</span><span style="--shiki-light:#24292E;--shiki-dark:#E1E4E8">,</span></span>
+<span class="line"><span style="--shiki-light:#005CC5;--shiki-dark:#79B8FF">  "jsxSingleQuote"</span><span style="--shiki-light:#24292E;--shiki-dark:#E1E4E8">: </span><span style="--shiki-light:#005CC5;--shiki-dark:#79B8FF">false</span><span style="--shiki-light:#24292E;--shiki-dark:#E1E4E8">,</span></span>
+<span class="line"><span style="--shiki-light:#005CC5;--shiki-dark:#79B8FF">  "trailingComma"</span><span style="--shiki-light:#24292E;--shiki-dark:#E1E4E8">: </span><span style="--shiki-light:#032F62;--shiki-dark:#9ECBFF">"es5"</span><span style="--shiki-light:#24292E;--shiki-dark:#E1E4E8">,</span></span>
+<span class="line"><span style="--shiki-light:#005CC5;--shiki-dark:#79B8FF">  "bracketSpacing"</span><span style="--shiki-light:#24292E;--shiki-dark:#E1E4E8">: </span><span style="--shiki-light:#005CC5;--shiki-dark:#79B8FF">true</span><span style="--shiki-light:#24292E;--shiki-dark:#E1E4E8">,</span></span>
+<span class="line"><span style="--shiki-light:#005CC5;--shiki-dark:#79B8FF">  "jsxBracketSameLine"</span><span style="--shiki-light:#24292E;--shiki-dark:#E1E4E8">: </span><span style="--shiki-light:#005CC5;--shiki-dark:#79B8FF">false</span><span style="--shiki-light:#24292E;--shiki-dark:#E1E4E8">,</span></span>
+<span class="line"><span style="--shiki-light:#005CC5;--shiki-dark:#79B8FF">  "bracketSameLine"</span><span style="--shiki-light:#24292E;--shiki-dark:#E1E4E8">: </span><span style="--shiki-light:#005CC5;--shiki-dark:#79B8FF">false</span><span style="--shiki-light:#24292E;--shiki-dark:#E1E4E8">,</span></span>
+<span class="line"><span style="--shiki-light:#005CC5;--shiki-dark:#79B8FF">  "proseWrap"</span><span style="--shiki-light:#24292E;--shiki-dark:#E1E4E8">: </span><span style="--shiki-light:#032F62;--shiki-dark:#9ECBFF">"preserve"</span><span style="--shiki-light:#24292E;--shiki-dark:#E1E4E8">,</span></span>
+<span class="line"><span style="--shiki-light:#005CC5;--shiki-dark:#79B8FF">  "arrowParens"</span><span style="--shiki-light:#24292E;--shiki-dark:#E1E4E8">: </span><span style="--shiki-light:#032F62;--shiki-dark:#9ECBFF">"always"</span><span style="--shiki-light:#24292E;--shiki-dark:#E1E4E8">,</span></span>
+<span class="line"><span style="--shiki-light:#005CC5;--shiki-dark:#79B8FF">  "endOfLine"</span><span style="--shiki-light:#24292E;--shiki-dark:#E1E4E8">: </span><span style="--shiki-light:#032F62;--shiki-dark:#9ECBFF">"lf"</span></span>
+<span class="line"><span style="--shiki-light:#24292E;--shiki-dark:#E1E4E8">}</span></span></code></pre>
+</div><ul>
+<li>项目根目录创建忽略检查配置文件 <code>.prettierignore</code>, 根据项目情况进行配置，用法与<code>.gitignore</code> 一致</li>
+</ul>
+]]></content:encoded>
+        </item>
+        <item>
+            <title><![CDATA[vscode 保存新建文件的换行格式设置为 LF]]></title>
+            <link>https://blog.xiaoda001.top/article/vscode/01_vscode 保存新建文件的换行格式设置为 LF/</link>
+            <guid>https://blog.xiaoda001.top/article/vscode/01_vscode 保存新建文件的换行格式设置为 LF/</guid>
+            <pubDate>Sun, 30 Jun 2024 13:12:02 GMT</pubDate>
+            <description><![CDATA[vscode 保存新建文件的换行格式设置为 LF
+- 安装插件 `EditorConfig for VS Code`
+- 新建`.editorconfig` 文件在根目录
+- `.editorconf]]></description>
+            <content:encoded><![CDATA[<h1 id="vscode-保存新建文件的换行格式设置为-lf" tabindex="-1">vscode 保存新建文件的换行格式设置为 LF <a class="header-anchor" href="#vscode-保存新建文件的换行格式设置为-lf" aria-label="Permalink to &quot;vscode 保存新建文件的换行格式设置为 LF&quot;">&ZeroWidthSpace;</a></h1>
+<ul>
+<li>安装插件 <code>EditorConfig for VS Code</code></li>
+<li>新建<code>.editorconfig</code> 文件在根目录</li>
+<li><code>.editorconfig</code> 文件添加以下呢内容</li>
+</ul>
+<div class="language-js vp-adaptive-theme"><button title="Copy Code" class="copy"></button><span class="lang">js</span><pre class="shiki shiki-themes github-light github-dark vp-code" tabindex="0" v-pre=""><code><span class="line"><span style="--shiki-light:#24292E;--shiki-dark:#E1E4E8">root </span><span style="--shiki-light:#D73A49;--shiki-dark:#F97583">=</span><span style="--shiki-light:#005CC5;--shiki-dark:#79B8FF"> true</span></span>
+<span class="line"></span>
+<span class="line"><span style="--shiki-light:#24292E;--shiki-dark:#E1E4E8">[</span><span style="--shiki-light:#D73A49;--shiki-dark:#F97583">*</span><span style="--shiki-light:#24292E;--shiki-dark:#E1E4E8">]</span></span>
+<span class="line"><span style="--shiki-light:#24292E;--shiki-dark:#E1E4E8">charset </span><span style="--shiki-light:#D73A49;--shiki-dark:#F97583">=</span><span style="--shiki-light:#24292E;--shiki-dark:#E1E4E8"> utf</span><span style="--shiki-light:#D73A49;--shiki-dark:#F97583">-</span><span style="--shiki-light:#005CC5;--shiki-dark:#79B8FF">8</span></span>
+<span class="line"><span style="--shiki-light:#24292E;--shiki-dark:#E1E4E8">indent_style </span><span style="--shiki-light:#D73A49;--shiki-dark:#F97583">=</span><span style="--shiki-light:#24292E;--shiki-dark:#E1E4E8"> space</span></span>
+<span class="line"><span style="--shiki-light:#24292E;--shiki-dark:#E1E4E8">indent_size </span><span style="--shiki-light:#D73A49;--shiki-dark:#F97583">=</span><span style="--shiki-light:#005CC5;--shiki-dark:#79B8FF"> 2</span></span>
+<span class="line"><span style="--shiki-light:#24292E;--shiki-dark:#E1E4E8">end_of_line </span><span style="--shiki-light:#D73A49;--shiki-dark:#F97583">=</span><span style="--shiki-light:#24292E;--shiki-dark:#E1E4E8"> lf</span></span>
+<span class="line"><span style="--shiki-light:#24292E;--shiki-dark:#E1E4E8">insert_final_newline </span><span style="--shiki-light:#D73A49;--shiki-dark:#F97583">=</span><span style="--shiki-light:#005CC5;--shiki-dark:#79B8FF"> true</span></span>
+<span class="line"><span style="--shiki-light:#24292E;--shiki-dark:#E1E4E8">trim_trailing_whitespace </span><span style="--shiki-light:#D73A49;--shiki-dark:#F97583">=</span><span style="--shiki-light:#005CC5;--shiki-dark:#79B8FF"> true</span></span></code></pre>
+</div><blockquote>
+<p>保存文件时，将文件的换行格式保存为<code>LF</code></p>
+</blockquote>
+]]></content:encoded>
+        </item>
+        <item>
+            <title><![CDATA[Windows 安装官方 office2021 版本永久免费]]></title>
+            <link>https://blog.xiaoda001.top/article/window/01_Windows安装官方office2021版本永久免费/</link>
+            <guid>https://blog.xiaoda001.top/article/window/01_Windows安装官方office2021版本永久免费/</guid>
+            <pubDate>Sun, 30 Jun 2024 13:12:02 GMT</pubDate>
+            <description><![CDATA[Windows 安装官方 office2021 版本永久免费
+常见的办公软件包括 Word、Excel 和 PPT，几乎所有公司都会使用。在国内，大多数人都会使用 WPS 软件，它简单且具有云存储能力]]></description>
+            <content:encoded><![CDATA[<h1 id="windows-安装官方-office2021-版本永久免费" tabindex="-1">Windows 安装官方 office2021 版本永久免费 <a class="header-anchor" href="#windows-安装官方-office2021-版本永久免费" aria-label="Permalink to &quot;Windows 安装官方 office2021 版本永久免费&quot;">&ZeroWidthSpace;</a></h1>
+<p>常见的办公软件包括 Word、Excel 和 PPT，几乎所有公司都会使用。在国内，大多数人都会使用 WPS 软件，它简单且具有云存储能力。但是它采用了会员购买制度，许多功能需要升级为会员后才能使用。国外的 Office 软件也需要付费，采用许可证购买永久使用制度。作为一个遵循“能省则省”原则的普通人，我找到了一种可以免费使用 Office 的方法。</p>
+<div class="tip custom-block"><p class="custom-block-title">TIP</p>
+<p>💡 可以使用<code>Edge浏览器</code>打开后面内容的链接，在下载文件的时候会提高<strong>下载速度</strong>。</p>
+</div>
+<h2 id="下载与安装" tabindex="-1">下载与安装 <a class="header-anchor" href="#下载与安装" aria-label="Permalink to &quot;下载与安装&quot;">&ZeroWidthSpace;</a></h2>
+<ul>
+<li>
+<p><strong>下载安装工具:</strong></p>
+<ul>
+<li><a href="https://www.microsoft.com/en-us/download/details.aspx?id=49117" target="_blank" rel="noreferrer"><strong>https://www.microsoft.com/en-us/download/details.aspx?id=49117</strong></a></li>
+<li><strong>打开下面链接，直接点击 download</strong>
+<img src="./images/01.png" alt="01"></li>
+</ul>
+</li>
+<li>
+<p><strong>在找一个合适的文件夹，例如: F:\office (F 盘下的 office 文件夹，可以自己新建一个文件夹)，将下载好的安装工具移动到文件夹内。</strong></p>
+</li>
+<li>
+<p><strong>双击安装工具，同意协议，安装目录选择当前的文件夹位置。</strong>
+<img src="./images/02.png" alt="02"></p>
+</li>
+<li>
+<p><strong>下载配置</strong></p>
+<ul>
+<li><a href="https://config.office.com/deploymentsettings" target="_blank" rel="noreferrer"><strong>https://config.office.com/deploymentsettings</strong></a></li>
+<li><strong>产品结构根据自己系统选择（这里选择：<code>64位</code>）</strong></li>
+<li><strong>产品选择 office 套件：<code>Office LTSC 标准版 2021 - 批量许可证</code> （其他产品看情况选择，这里只需要 offiice）</strong>
+<img src="./images/03.png" alt="03"></li>
+<li><strong>更新频道不用修改，保持默认</strong>
+<img src="./images/04.png" alt="04"></li>
+<li><strong>应用可以只选择<code>Excel</code>、<code>PowerPoint</code>、<code>Word</code>，其他的软件看个人需求，需要的可以选上</strong>。
+<img src="./images/05.png" alt="05"></li>
+<li><strong>语言选择 <code>简体中文</code>。(如果喜欢其他语言可以选择其他语言)</strong>
+<img src="./images/06.png" alt="06"></li>
+<li><strong>点右上角的导出</strong>
+<img src="./images/07.png" alt="07"></li>
+<li><strong>导出选项选择 XML</strong>
+<img src="./images/08.png" alt="08"></li>
+<li><strong>接收协议，配置 改为 <code>config</code></strong>
+<img src="./images/09.png" alt="09"></li>
+<li><strong>导出到上面安装 office 的文件夹</strong></li>
+</ul>
+</li>
+<li>
+<p><strong>输入命令安装 office</strong></p>
+<ul>
+<li><strong>打开终端: <code>win</code>+<code>R</code>, 输入：<code>cmd</code>，回车</strong></li>
+<li><strong>切换到上面的目录（F:\office）</strong></li>
+<li>依次输入以下两个命令</li>
+</ul>
+<div class="language-bash vp-adaptive-theme"><button title="Copy Code" class="copy"></button><span class="lang">bash</span><pre class="shiki shiki-themes github-light github-dark vp-code" tabindex="0" v-pre=""><code><span class="line"><span style="--shiki-light:#6A737D;--shiki-dark:#6A737D"># 下载安装文件</span></span>
+<span class="line"><span style="--shiki-light:#6F42C1;--shiki-dark:#B392F0">setup.exe</span><span style="--shiki-light:#032F62;--shiki-dark:#9ECBFF"> /download</span><span style="--shiki-light:#032F62;--shiki-dark:#9ECBFF"> config.xml</span></span>
+<span class="line"></span>
+<span class="line"><span style="--shiki-light:#6A737D;--shiki-dark:#6A737D"># 安装</span></span>
+<span class="line"><span style="--shiki-light:#6F42C1;--shiki-dark:#B392F0">setup.exe</span><span style="--shiki-light:#032F62;--shiki-dark:#9ECBFF"> /configure</span><span style="--shiki-light:#032F62;--shiki-dark:#9ECBFF"> config.xml</span><span style="--shiki-light:#005CC5;--shiki-dark:#79B8FF">**</span></span></code></pre>
+</div></li>
+<li>
+<p><strong>激活</strong></p>
+<ul>
+<li>在搜索框输入：<code>命令提示符</code>，右键选择管理员</li>
+<li>切换到 office 的安装目录
+<ul>
+<li>32 位系统：<code>cd C:\Program Files(x86)\Microsoft Office\Office16</code></li>
+<li>64 位系统：<code>cd C:\Program Files\Microsoft Office\Office16</code></li>
+</ul>
+</li>
+<li>输入激活命令</li>
+</ul>
+<div class="language-bash vp-adaptive-theme"><button title="Copy Code" class="copy"></button><span class="lang">bash</span><pre class="shiki shiki-themes github-light github-dark vp-code" tabindex="0" v-pre=""><code><span class="line"><span style="--shiki-light:#6F42C1;--shiki-dark:#B392F0">cscript</span><span style="--shiki-light:#032F62;--shiki-dark:#9ECBFF"> ospp.vbs</span><span style="--shiki-light:#032F62;--shiki-dark:#9ECBFF"> /sethst:kms.03k.org</span></span>
+<span class="line"></span>
+<span class="line"><span style="--shiki-light:#6F42C1;--shiki-dark:#B392F0">cscript</span><span style="--shiki-light:#032F62;--shiki-dark:#9ECBFF"> ospp.vbs</span><span style="--shiki-light:#032F62;--shiki-dark:#9ECBFF"> /act</span><span style="--shiki-light:#005CC5;--shiki-dark:#79B8FF">**</span></span></code></pre>
+</div></li>
+<li>
+<p><strong>激活成功后，打开 word，点击账号就可以看见激活成功。</strong></p>
+</li>
+</ul>
+<h1 id="可能遇到的问题" tabindex="-1">可能遇到的问题 <a class="header-anchor" href="#可能遇到的问题" aria-label="Permalink to &quot;可能遇到的问题&quot;">&ZeroWidthSpace;</a></h1>
+<ol>
+<li>最后一步出现了<code>Error Code: 0x80080005</code>错误</li>
+<li>原因：可能以前就安装过 office，或者是之前安装的 office 是用激活软件激活的。</li>
+<li>解决方法：卸载以前安装的 office，并重新按上面步骤重新安装 office，然后进入注册表，将<code>KEY_LOCAL_MACHINE\SOFTWARE\Microsoft\Windows NT\CurrentVersion\Image File Execution Options\SppExtComObj.exe</code>删除，重新输入激活命令。</li>
+</ol>
+]]></content:encoded>
+            <enclosure url="https://blog.xiaoda001.top/images/01.png" length="0" type="image/png"/>
+        </item>
+        <item>
+            <title><![CDATA[windows 如何安装驱动]]></title>
+            <link>https://blog.xiaoda001.top/article/window/02_windows如何安装驱动/</link>
+            <guid>https://blog.xiaoda001.top/article/window/02_windows如何安装驱动/</guid>
+            <pubDate>Sun, 30 Jun 2024 13:12:02 GMT</pubDate>
+            <description><![CDATA[windows 如何安装驱动
+在使用 windows 电脑时，有可能会出现某个驱动损坏，丢失的情况。或者是自己手痒重装了 windows 系统，需要重新安装驱动。驱动下载安装可以使用`驱动精灵` 等第]]></description>
+            <content:encoded><![CDATA[<h1 id="windows-如何安装驱动" tabindex="-1">windows 如何安装驱动 <a class="header-anchor" href="#windows-如何安装驱动" aria-label="Permalink to &quot;windows 如何安装驱动&quot;">&ZeroWidthSpace;</a></h1>
+<p>在使用 windows 电脑时，有可能会出现某个驱动损坏，丢失的情况。或者是自己手痒重装了 windows 系统，需要重新安装驱动。驱动下载安装可以使用<code>驱动精灵</code> 等第三方软件，但是想要自己下载驱动并安装，则需要在对应的电脑品牌商提供的网站上下载(其他下载路径也可以)。下载后的驱动如何安装？其实是很简单的。</p>
+<h2 id="方法" tabindex="-1">方法 <a class="header-anchor" href="#方法" aria-label="Permalink to &quot;方法&quot;">&ZeroWidthSpace;</a></h2>
+<ul>
+<li>搜索框输输入<code>设备管理器</code> ，打开。</li>
+<li>选中这台设备的名字，右键-&gt;添加驱动程序</li>
+</ul>
+<p><img src="./images/01.png" alt="01"></p>
+<ul>
+<li>选择下载好的驱动，如果驱动是压缩包，选择前需要先解压。</li>
+<li>添加完所有驱动就重启电脑。</li>
+</ul>
+]]></content:encoded>
+            <enclosure url="https://blog.xiaoda001.top/images/01.png" length="0" type="image/png"/>
+        </item>
+    </channel>
+</rss>
