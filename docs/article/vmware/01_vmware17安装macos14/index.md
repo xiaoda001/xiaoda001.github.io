@@ -12,6 +12,7 @@ categories:
 
 - 下载 vmware 与 解锁工具: https://pan.baidu.com/s/1_-yeQDr0aX7IsyDtcBfk-g?pwd=cu7e
 - 下载 macos 14 系统: https://macoshome.com/macos/38891.html
+- 下载 Chameleon-Wizard：https://mac.softpedia.com/get/Utilities/Chameleon-Wizard.shtml
 
 ## 安装步骤
 
