@@ -4,7 +4,7 @@
         <title>小达零零壹</title>
         <link>https://blog.xiaoda001.top</link>
         <description>编程爱好者/技术爬行者（大前端相关技术分享）</description>
-        <lastBuildDate>Wed, 06 Nov 2024 17:37:53 GMT</lastBuildDate>
+        <lastBuildDate>Thu, 16 Jan 2025 15:48:30 GMT</lastBuildDate>
         <docs>https://validator.w3.org/feed/docs/rss2.html</docs>
         <generator>https://github.com/jpmonette/feed</generator>
         <language>zh-cn</language>
@@ -14,6 +14,40 @@
             <link>https://blog.xiaoda001.top</link>
         </image>
         <copyright>Copyright (c) 2024-present, 小达零零壹</copyright>
+        <item>
+            <title><![CDATA[vmware17 安装 macos14]]></title>
+            <link>https://blog.xiaoda001.top/article/vmware/01_vmware17安装macos14/</link>
+            <guid>https://blog.xiaoda001.top/article/vmware/01_vmware17安装macos14/</guid>
+            <pubDate>Thu, 16 Jan 2025 15:45:54 GMT</pubDate>
+            <description><![CDATA[vmware17 安装 macos14
+ 准备工作
+- 下载 vmware 与 解锁工具: https://pan.baidu.com/s/1_-yeQDr0aX7IsyDtcBfk-g?pwd=cu]]></description>
+            <content:encoded><![CDATA[<h1 id="vmware17-安装-macos14" tabindex="-1">vmware17 安装 macos14 <a class="header-anchor" href="#vmware17-安装-macos14" aria-label="Permalink to &quot;vmware17 安装 macos14&quot;"></a></h1>
+<h2 id="准备工作" tabindex="-1">准备工作 <a class="header-anchor" href="#准备工作" aria-label="Permalink to &quot;准备工作&quot;"></a></h2>
+<ul>
+<li>下载 vmware 与 解锁工具: <a href="https://pan.baidu.com/s/1_-yeQDr0aX7IsyDtcBfk-g?pwd=cu7e" target="_blank" rel="noreferrer">https://pan.baidu.com/s/1_-yeQDr0aX7IsyDtcBfk-g?pwd=cu7e</a></li>
+<li>下载 macos 14 系统: <a href="https://macoshome.com/macos/38891.html" target="_blank" rel="noreferrer">https://macoshome.com/macos/38891.html</a></li>
+<li>下载 Chameleon-Wizard：<a href="https://mac.softpedia.com/get/Utilities/Chameleon-Wizard.shtml" target="_blank" rel="noreferrer">https://mac.softpedia.com/get/Utilities/Chameleon-Wizard.shtml</a></li>
+</ul>
+<h2 id="安装步骤" tabindex="-1">安装步骤 <a class="header-anchor" href="#安装步骤" aria-label="Permalink to &quot;安装步骤&quot;"></a></h2>
+<ul>
+<li>参考此链接：<a href="https://blog.csdn.net/github_35856054/article/details/134719935" target="_blank" rel="noreferrer">https://blog.csdn.net/github_35856054/article/details/134719935</a></li>
+</ul>
+<h2 id="遇到的问题" tabindex="-1">遇到的问题 <a class="header-anchor" href="#遇到的问题" aria-label="Permalink to &quot;遇到的问题&quot;"></a></h2>
+<ul>
+<li>无法登录 appid
+<ul>
+<li>参考此链接：<a href="https://www.dhzy.fun/archives/5966.html" target="_blank" rel="noreferrer">https://www.dhzy.fun/archives/5966.html</a></li>
+</ul>
+</li>
+</ul>
+<h2 id="参考资料" tabindex="-1">参考资料 <a class="header-anchor" href="#参考资料" aria-label="Permalink to &quot;参考资料&quot;"></a></h2>
+<ul>
+<li><a href="https://blog.csdn.net/github_35856054/article/details/134719935" target="_blank" rel="noreferrer">vmware 虚拟机 17 安装 macos14 过程及问题处理亲测</a></li>
+<li><a href="https://www.dhzy.fun/archives/5966.html" target="_blank" rel="noreferrer">修改苹果系统的序列号</a></li>
+</ul>
+]]></content:encoded>
+        </item>
         <item>
             <title><![CDATA[记录通过个人公众号下载微信表情包项目失败告终过程]]></title>
             <link>https://blog.xiaoda001.top/article/official-accounts/01_记录通过个人公众号下载微信表情包项目失败告终过程/</link>
