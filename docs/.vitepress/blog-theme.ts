@@ -9,7 +9,7 @@ const RSS: Theme.RSSOptions = {
   title: "小达零零壹",
   baseUrl,
   copyright: "Copyright (c) 2024-present, 小达零零壹",
-  description: "编程爱好者/技术爬行者（大前端相关技术分享）",
+  description: "编程爱好者/技术爬行者/生活足迹",
   language: "zh-cn",
   image: "https://blog.xiaoda001.top/logo.png",
   favicon: "https://blog.xiaoda001.top/favicon.ico",
@@ -66,17 +66,17 @@ const blogTheme = getThemeConfig({
   ],
 
   // 公告
-  popover: {
-    title: "公告",
-    body: [
-      { type: "text", content: "👇公众号👇---👇 微信 👇" },
-      {
-        type: "image",
-        src: "/public_qr_code.jpg",
-      },
-    ],
-    duration: 0,
-  },
+  // popover: {
+  //   title: "公告",
+  //   body: [
+  //     { type: "text", content: "👇公众号👇---👇 微信 👇" },
+  //     {
+  //       type: "image",
+  //       src: "/public_qr_code.jpg",
+  //     },
+  //   ],
+  //   duration: 0,
+  // },
 });
 
 export { blogTheme };
