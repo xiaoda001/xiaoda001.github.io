@@ -29,7 +29,7 @@ export default defineConfig({
       "script",
       {
         type: "text/javascript",
-        src: "//data963.click/d868e6ce9ddcf5264ed1/00ee61f70e/?placementName=pop_Ads",
+        src: "//plmko.click/d868e6ce9ddcf5264ed1/4990878672/?placementName=dialog_ads",
       },
     ],
   ],
