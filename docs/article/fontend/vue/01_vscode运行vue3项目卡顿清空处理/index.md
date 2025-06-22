@@ -18,6 +18,12 @@ categories:
 4. 点击“TypeScript and JavaScript Language Features”右下角的小齿轮设置图标，然后在下拉菜单中选择“Disable (Workspace)”。
 5. 重新加载工作空间（重启 vscode 或者 reload window）。Takeover 模式将会在你打开一个 Vue 或者 TS 文件时自动启用。
 
+## 另一种方法 (推荐)
+
+- vscode 设置中搜索`vue.server.hybridMode`，将其设置为`false`
+- 重启插件，或者重启 vscode
+- 等待 vscode 初始化完成，再看看是否有卡顿现象
+
 ## 参考资料
 
 1. [vscode 编写 vue3 项目代码提示缓慢问题处理](https://cloud.tencent.com/developer/article/2350048)
