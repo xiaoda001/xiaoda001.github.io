@@ -4,15 +4,15 @@ import { getThemeConfig } from "@sugarat/theme/node";
 // 开启RSS支持（RSS配置）
 import type { Theme } from "@sugarat/theme";
 
-const baseUrl = "https://blog.xiaoda001.top";
+const baseUrl = "https://xiaoda001.github.io";
 const RSS: Theme.RSSOptions = {
-  title: "小达零零壹",
+  title: "小达灵灵壹",
   baseUrl,
-  copyright: "Copyright (c) 2024-present, 小达零零壹",
+  copyright: "Copyright (c) 2024-present, 小达灵灵壹",
   description: "编程爱好者/技术爬行者/生活足迹",
   language: "zh-cn",
-  image: "https://blog.xiaoda001.top/logo.png",
-  favicon: "https://blog.xiaoda001.top/favicon.ico",
+  image: "https://xiaoda001.github.io/logo.png",
+  favicon: "https://xiaoda001.github.io/favicon.ico",
 };
 
 // 所有配置项，详见文档: https://theme.sugarat.top/
@@ -31,7 +31,7 @@ const blogTheme = getThemeConfig({
   footer: {
     // message 字段支持配置为HTML内容，配置多条可以配置为数组
     // message: '下面 的内容和图标都是可以修改的噢（当然本条内容也是可以隐藏的）',
-    copyright: "MIT License | 小达零零壹",
+    copyright: "MIT License | 小达灵灵壹",
     // icpRecord: {
     //   name: '蜀ICP备19011724号',
     //   link: 'https://beian.miit.gov.cn/'
@@ -46,7 +46,7 @@ const blogTheme = getThemeConfig({
   themeColor: "el-blue",
 
   // 文章默认作者
-  author: "小达零零壹",
+  author: "小达灵灵壹",
 
   // 友链
   friend: [
