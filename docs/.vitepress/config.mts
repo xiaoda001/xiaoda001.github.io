@@ -15,7 +15,7 @@ import { blogTheme } from "./blog-theme";
 export default defineConfig({
   // 继承博客主题(@sugarat/theme)
   extends: blogTheme,
-  base: "xiaoda001.github.io",
+  // base: "xiaoda001.github.io",
   lang: "zh-cn",
   title: "小达灵灵壹",
   description: "编程爱好者/技术爬行者",
